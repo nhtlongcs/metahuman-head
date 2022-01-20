@@ -1,0 +1,3 @@
+[submodule "hifi3dface"]
+	path = hifi3dface
+	url = https://github.com/wan2000/hifi3dface.git
