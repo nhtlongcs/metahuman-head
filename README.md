@@ -29,11 +29,14 @@ You will need to download the following files to run the code:
 - Download the **resources.zip** (2GB) into the repo root directory **./** and unzip it: [Google Drive](https://drive.google.com/file/d/1FoBbj1qWdf2LyJkxLYnMJ4h4woTQ6QL_/view?usp=sharing)
 - Download the **test_data.zip** (80MB) into the repo root directory **./** and unzip it: [Google Drive](https://drive.google.com/file/d/1f5imMCO0ug_ozj0cDcNYtizom5lBu2PH/view?usp=sharing)
 
-**1.1 Data acquisition:**
+
+### Running The Code
+
+**Data acquisition:**
 
 You may use [RGBD data capture code](https://github.com/lxk121lalala/RGBD_data_capture) (need an iPhone with TrueDepth camera) to capture RGB-D selfies. The color and depth images are in JPG and PNG formats respectively. The resolution of the color image is 1504 x 1128, and the depth image is of size 640 x 480. If you want to use your own capturing system, please modify the code to suit your case.
 
-**1.2 Configuration:**
+**Configuration:**
 
 Modify **run_rgbd.sh** as following:
 
@@ -73,7 +76,7 @@ Modify **run_rgbd.sh** as following:
     is_add_head_male="True" #  True: complete head with a male template
     ```
 
-**1.3 Run:**
+**Run:**
 
 Please run the follow command to generate the results.
 ```bash
@@ -82,7 +85,7 @@ bash run_opt_rgbd.sh
 
 The RGBD data will be used for shape optimization and HD texture/normal maps generation. We highly recommend that you use our 3DMM version **AI-NExT-Shape.mat** in order to achieve the same results as reported in our paper. You can also run our code with **BFM**, but the texture map and normal map will not be generated if you use BFM, as BFM does not provide UV maps.
 
-**1.4 Results:**
+**Results:**
 
 The produced results will be saved in the **results** floder in data path, including: 
 
